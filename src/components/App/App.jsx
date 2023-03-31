@@ -1,6 +1,6 @@
-import { Section } from 'components/Section/Section';
+// import { Section } from 'components/Section/Section';
 import { Form } from 'components/Form/Form';
-import { Contscts } from 'components/Contacts/Contacts';
+// import { Contscts } from 'components/Contacts/Contacts';
 
 import { Component } from 'react';
 
