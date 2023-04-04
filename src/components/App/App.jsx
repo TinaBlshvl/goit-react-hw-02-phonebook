@@ -58,21 +58,22 @@ export class App extends Component {
   render() {
     const { filter, contacts } = this.state;
 
-    const normalise = filter.toLowerCase();
+    const normaliseFilter = filter.toLowerCase();
     const filteredSearch = contacts.filter(elem =>
-      elem.name.toLowerCase().includes(normalise)
+      elem.name.toLowerCase().includes(normaliseFilter)
     );
     return (
-      <Section title="Phonebook">
+      <div>
+        <Section title="Phonebook" />
         <Form onSubmit={this.formSubmit} />
         <Contscts
           contacts={filteredSearch}
           onSearch={this.onSearchType}
-          filter={filter}
+          filter={this.filter}
           onFilter={this.onFilterSearch}
           deleteItem={this.deleteItem}
         />
-      </Section>
+      </div>
     );
   }
 }
