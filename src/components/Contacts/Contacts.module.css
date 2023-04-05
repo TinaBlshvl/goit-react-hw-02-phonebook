@@ -23,3 +23,21 @@
   width: 280px;
   margin-bottom: 20px;
 }
+
+.contact {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: rgb(153, 126, 220);
+  color: aliceblue;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}

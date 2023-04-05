@@ -56,7 +56,7 @@ export class Form extends Component {
           onChange={this.handleChange}
         />
 
-        <button className={css.btn} type="button">
+        <button className={css.btn} type="submit">
           Add contact
         </button>
       </form>

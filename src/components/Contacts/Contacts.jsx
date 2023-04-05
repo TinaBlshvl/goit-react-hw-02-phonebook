@@ -20,8 +20,8 @@ export const Contscts = ({ filter, onFilter, contacts, deleteItem }) => {
         <section>
           <ul>
             {contacts.map(contact => (
-              <li key={contact.id}>
-                <p>
+              <li key={contact.id} className={css.item}>
+                <p className={css.contact}>
                   {contact.name}: {contact.number}
                 </p>
                 <button
@@ -29,6 +29,7 @@ export const Contscts = ({ filter, onFilter, contacts, deleteItem }) => {
                   onClick={() => {
                     deleteItem(contact.id);
                   }}
+                  className={css.btn}
                 >
                   Delete
                 </button>
